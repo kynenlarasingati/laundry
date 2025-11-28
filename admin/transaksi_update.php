@@ -30,5 +30,5 @@ for($x=0;$x<count($jenis_pakaian);$x++){
 		mysqli_query($koneksi,"insert into pakaian values('','$id','$jenis_pakaian[$x]','$jumlah_pakaian[$x]')");
 	}
 }
-header("location:transaksi.php");
+echo "<script>alert('Data sudah diubah'); window.location.href='transaksi.php'</script>";
 ?>
